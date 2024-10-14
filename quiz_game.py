@@ -2,13 +2,20 @@ print("Hello, Welcome to my computer quiz game!")
 
 playing = input("Do you want to play the game?")
 
-if playing != True:
+if playing != "Yes":
     quit()
 
 print("Great, Lets play the game")
 
-response = input("What does your computer do?")
-if response == "It works!":
-    print("Correct answer!")
+response = input("What does OS stand for?")
+if response == "operating system":
+    print("Correct!")
 else:
-    print("Sorry, incorrect answer!")
+    print("Oops, incorrect!")
+
+response = input("Which OS are you using?")
+if response == "windows 11":
+    print("Correct!")
+else:
+    print("Oops, incorrect!")
+
