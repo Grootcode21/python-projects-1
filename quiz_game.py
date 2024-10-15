@@ -19,3 +19,9 @@ if response == "windows 11":
 else:
     print("Oops, incorrect!")
 
+response = input("What does GPU stand for?")
+if response == "graphics processing unit":
+    print("Correct!")
+else:
+    print("Oops, incorrect!")
+
