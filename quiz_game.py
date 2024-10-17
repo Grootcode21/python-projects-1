@@ -42,3 +42,15 @@ if response == "portable document format":
     print("Correct!")
 else:
     print("Oops, incorrect!")
+
+response = input("What does GPS stand for?")
+if response == "global positioning system":
+    print("Correct!")
+else:
+    print("Oops, incorrect!")
+
+response = input("What does HDMI stand for?")
+if response == "high definition multimedia interface":
+    print("Correct!")
+else:
+    print("Oops, incorrect!")
