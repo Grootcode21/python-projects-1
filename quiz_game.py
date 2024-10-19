@@ -104,7 +104,13 @@ else:
     print("Oops, incorrect!")
 
 response = input("What does HTTP stand for?")
-if response == "digital versatile disc":
+if response == "hypertext transfer protocol":
+    print("Correct!")
+else:
+    print("Oops, incorrect!")
+
+response = input("What does GUI stand for?")
+if response == "graphical user interface":
     print("Correct!")
 else:
     print("Oops, incorrect!")
