@@ -114,3 +114,15 @@ if response == "graphical user interface":
     print("Correct!")
 else:
     print("Oops, incorrect!")
+
+response = input("What does BIOS stand for?")
+if response == "basic input output system":
+    print("Correct!")
+else:
+    print("Oops, incorrect!")
+
+response = input("What does SSD stand for?")
+if response == "solid state drive":
+    print("Correct!")
+else:
+    print("Oops, incorrect!")
