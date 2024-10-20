@@ -67,71 +67,85 @@ else:
 response = input("What does LCD stand for?")
 if response == "liquid crystal display":
     print("Correct!")
+    score += 1
 else:
     print("Oops, incorrect!")
 
 response = input("What does LED stand for?")
 if response == "light emmiting diode":
     print("Correct!")
+    score += 1
 else:
     print("Oops, incorrect!")
 
 response = input("What is Wi-Fi?")
 if response == "wireless fidelity":
     print("Correct!")
+    score += 1
 else:
     print("Oops, incorrect!")
 
 response = input("What does GPRS stand for?")
 if response == "general packet radio service":
     print("Correct!")
+    score += 1
 else:
     print("Oops, incorrect!")
 
 response = input("What does DVD stand for?")
 if response == "digital versatile disc":
     print("Correct!")
+    score += 1
 else:
     print("Oops, incorrect!")
 
 response = input("What is the brain of the computer?")
 if response == "central processing unit":
     print("Correct!")
+    score += 1
 else:
     print("Oops, incorrect!")
 
 response = input("What does RAM stand for in computing?")
 if response == "random accesss memory":
     print("Correct!")
+    score += 1
 else:
     print("Oops, incorrect!")
 
 response = input("Which operating system is developed by Microsoft?")
 if response == "windows":
     print("Correct!")
+    score += 1
 else:
     print("Oops, incorrect!")
 
 response = input("What does HTTP stand for?")
 if response == "hypertext transfer protocol":
     print("Correct!")
+    score += 1
 else:
     print("Oops, incorrect!")
 
 response = input("What does GUI stand for?")
 if response == "graphical user interface":
     print("Correct!")
+    score += 1
 else:
     print("Oops, incorrect!")
 
 response = input("What does BIOS stand for?")
 if response == "basic input output system":
     print("Correct!")
+    score += 1
 else:
     print("Oops, incorrect!")
 
 response = input("What does SSD stand for?")
 if response == "solid state drive":
     print("Correct!")
+    score += 1
 else:
     print("Oops, incorrect!")
+
+print("Your final score is:", score, "/ 30")
