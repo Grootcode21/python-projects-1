@@ -148,5 +148,6 @@ if response.lower() == "solid state drive":
 else:
     print("Oops, incorrect!")
 
-print("Your final score is:", str(score), "/ 20")
+print("Congrats!, Your final score is:", str(score), "/ 20")
+
 
