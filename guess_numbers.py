@@ -14,8 +14,10 @@ else:
     quit()
 
 random_no = random.randint(0, top_of_range)
+guesses = 0
 
 while True:
+    guesses += 1
     user_guess = input(f"Guess a number between 0 and {top_of_range}: ")
     if user_guess.isdigit():
         user_guess = int(user_guess)
@@ -27,6 +29,6 @@ while True:
         else:
             print("Too high! Try again.")
      
-
+print("You got it in ",guesses, " guesses")
 
 
