@@ -21,10 +21,15 @@ while True:
     user_guess = input(f"Guess a number between 0 and {top_of_range}: ")
     if user_guess.isdigit():
         user_guess = int(user_guess)
-        if user_guess == random_no:
-            print("Congratulations! You guessed the correct number.")
-            break
-        elif user_guess < random_no:
+    else:
+        print("Error! You must type a number.")
+        continue
+
+    if user_guess == random_no:
+        print("Congratulations! You guessed the correct number.")
+        break
+    else:
+        if user_guess < random_no:
             print("Too low! Try again.")
         else:
             print("Too high! Try again.")
