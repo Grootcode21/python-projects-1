@@ -28,11 +28,11 @@ while True:
     if user_guess == random_no:
         print("Congratulations! You guessed the correct number.")
         break
+    
+    elif user_guess < random_no:
+        print("Too low! Try again.")
     else:
-        if user_guess < random_no:
-            print("Too low! Try again.")
-        else:
-            print("Too high! Try again.")
+        print("Too high! Try again.")
      
 print("You got it in ",guesses, " guesses")
 
