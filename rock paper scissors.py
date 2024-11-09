@@ -7,7 +7,6 @@ choices = ['rock', 'paper', 'scissors']
 
 while True:
     user_choice = input("Enter rock, paper, or scissors (or 'quit' to exit): ").lower()
-    
     if user_choice == 'q':
         quit()
 
@@ -31,6 +30,10 @@ while True:
     else:
         print("You lost. Computer wins!")
         computer_wins += 1
+
+print("You won!", user_wins, "times.")
+print("You lost!", computer_wins, "times.")
+
 
 
 
