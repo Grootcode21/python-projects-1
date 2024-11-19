@@ -8,9 +8,18 @@ if answer == "left":
 
     if answer == "walk":
         answer = "you find a hidden cave. You can enter or leave."
+
+        if answer == "enter":
+            answer = "you get bitten by a venomous snake and you lose the game."
         
+        elif answer == "leave":
+            answer = "you come across a lonely pathway.You can go foward or go back"
+
+        else:
+            print('This is not a valid option')
+                
     elif answer == "swim":
-        answer = "you drown and die."
+        answer = "you drown and die.You lose the game"
 
     else:
         print('This is not a valid option')
