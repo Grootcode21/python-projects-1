@@ -25,14 +25,7 @@ if answer == "left":
         print('This is not a valid option')
     
 elif answer == "right":
-    answer == input("you come to a a narrow lonely path. You can continue or go back.")
-
-    if answer == "continue":
-
-    elif answer == "back":
-
-    else:
-       print('This is not a valid option') 
+    answer == input("you come to an end. You can go left or quit.")
 
 
 else:
