@@ -4,8 +4,10 @@ def view():
     pass
 
 def add():
-    pass
+    name = input("Account name: ")
+    pswdd = input("Password: ")
 
+    with open(name
 while True:
     mode = input("Would you like to add a new password or view existing ones?(add|view)")
 
@@ -13,9 +15,9 @@ while True:
         break
 
     if mode == "add":
-        pass
+        add()
     if mode == "view":
-        pass
+        view()
     else:
         print("Invalid mode.")
         continue
