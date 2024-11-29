@@ -5,11 +5,15 @@ def view():
 
 def add():
     name = input("Account name: ")
-    pswdd = input("Password: ")
+    pswd = input("Password: ")
 
-    with open(name
+    with open('password', 'a') as f:
+        f.write(name + "|" + pswd)
+
+
+
 while True:
-    mode = input("Would you like to add a new password or view existing ones?(add|view)")
+    mode = input("Would you like to add a new password or view existing ones?(add|view , press q to quite)")
 
     if mode == "q":
         break
