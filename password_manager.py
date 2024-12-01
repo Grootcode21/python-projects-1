@@ -7,7 +7,7 @@ def add():
     name = input("Account name: ")
     pswd = input("Password: ")
 
-    with open('password', 'a') as f:
+    with open('password.txt', 'a') as f:
         f.write(name + "|" + pswd)
 
 
