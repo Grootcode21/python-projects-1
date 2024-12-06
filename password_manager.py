@@ -3,7 +3,7 @@ master_pwd = input("What is the master password?")
 def view():
     with open('password.txt', 'r') as f:
         for line in f.readlines():
-            print(line.strip().split("|")[0])
+            print(line.rstrip().split("|")[0])
             
 
 
