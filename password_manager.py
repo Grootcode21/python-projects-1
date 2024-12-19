@@ -22,7 +22,7 @@ def view():
         for line in f.readlines():
             data = line.rstrip()
             user, passw = data.split("|")
-            print("User:", user, ", Password:",fer.decrypt(passw.encode()).decode())
+            print("User:", user, ", Password:",Fernet.decrypt(passw.encode()).decode())
             
 
 
@@ -31,7 +31,7 @@ def add():
     pswd = input("Password: ")
 
     with open('password.txt', 'a') as f:
-        f.write(name + "|" + str(fer.ecrypt(pwd.encode()).decode()) + "\n")
+        f.write(name + "|" + str(Fernet.encrypt(pswd.encode()).decode()) + "\n")
 
 
 
