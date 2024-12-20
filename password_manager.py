@@ -24,7 +24,7 @@ def view():
             user, passw = data.split("|")
             print("User:", user, ", Password:",Fernet.decrypt(passw.encode()).decode())
             
-
+#Learn more about cryptography on https://cryptography.io/en/latest/
 
 def add():
     name = input("Account name: ")
