@@ -31,7 +31,8 @@ def add():
     pswd = input("Password: ")
 
     with open('password.txt', 'a') as f:
-        f.write(name + "|" + str(Fernet.encrypt(pswd.encode()).decode()) + "\n")
+        f.write(name + "|" + Fernet(load_key()).encrypt(pswd.encode()).decode())
+        
 
 
 
