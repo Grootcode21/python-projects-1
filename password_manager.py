@@ -1,7 +1,7 @@
 # pip install cryptography
 from cryptography.fernet import  Fernet
 
-
+#write the key into the file 
 def write_key():
     key = Fernet.generate_key()
     with open("key.key", "wb") as key_file:
@@ -14,8 +14,6 @@ def load_key():
     return key
 
 master_pwd = input("What is the master password?")
-
-
 
 def view():
     with open('password.txt', 'r') as f:
@@ -33,7 +31,6 @@ def add():
     with open('password.txt', 'a') as f:
         f.write(name + "|" + Fernet(load_key()).encrypt(pswd.encode()).decode())
         
-
 
 
 while True:
