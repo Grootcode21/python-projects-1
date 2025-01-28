@@ -12,5 +12,9 @@ while True:
     if players.isdigit():
         players = int(players)
         if 1 <= players <= 4:
+            print("Must be between 1-4 players.")
             break
-    
+    else:
+        print("Invalid.Try again")
+
+print(players)
