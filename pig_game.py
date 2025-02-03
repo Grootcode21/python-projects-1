@@ -27,6 +27,7 @@ player_scores = [0 for _ in range(players)]
 while max(player_scores) < max_score:
 
     for player_index in range(players):
+        print("\nPlayer", player_index + 1, "turn has started!!!")
         current_score = 0
 
     while True:
@@ -37,6 +38,7 @@ while max(player_scores) < max_score:
         value = roll()
         if value == 1:
             print("You rolled a 1! Turn done!")
+            current_score = 0
             break
         else:
             current_score += value
@@ -45,3 +47,4 @@ while max(player_scores) < max_score:
         print("Your score is: " , current_score)
 
     player_scores[player_index] = current_score
+    print("Your total score is: ", player_scores[player_index])
