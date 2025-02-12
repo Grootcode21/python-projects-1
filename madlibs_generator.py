@@ -1,7 +1,7 @@
 with open("story.txt", "r") as f:
     story = f.read()
 
-words = []
+words = set()
 start_of_the_word = -1
 
 target_start = "<"
@@ -12,5 +12,5 @@ for i, char in enumerate(story):
         start_of_the_word = i 
     if char == target_end and start_of_the_word != -1:
         word = story[start_of_the_word:i+1]
-        words.append(word)
+        words.add(word)
         start_of_the_word = -1
