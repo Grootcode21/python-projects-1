@@ -68,7 +68,6 @@ def main():
 
 
 def single_question_mode():
-    """Alternative mode: Answer all divisibility questions for one number at once."""
     print("\n=== Single Question Mode ===")
     number = random.randint(1, 200)
     print(f"\nNumber: {number}")
@@ -106,14 +105,13 @@ def single_question_mode():
     
     print(f"\nFinal score: {correct_count}/{len(divisors)}")
     
-    # Show divisibility summary
     print("\nDivisibility summary:")
     for divisor in divisors:
         result = "divisible" if number % divisor == 0 else "not divisible"
         print(f"  {number} is {result} by {divisor}")
 
 if __name__ == "__main__":
-    print("Choose game mode:")
+    print("Choose Game Mode:")
     print("1: Multiple numbers (answer one divisor at a time)")
     print("2: Single number (answer all divisors at once)")
     
